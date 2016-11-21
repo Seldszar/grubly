@@ -1,5 +1,3 @@
 # Grubly
 
-## Getting started
-
-Before
+Another browser extension for Feedly to show your unread feeds.
