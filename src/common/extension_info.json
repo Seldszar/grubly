@@ -1,0 +1,30 @@
+{
+  "name": "Grubly",
+  "version": "0.1.0",
+  "description": "Another browser extension for Feedly to show your unread feeds",
+  "creator": "Alexandre Breteau <contact@seldszar.fr>",
+  "homepage_url": "http://github.com/Seldszar/grubly",
+  "default_locale": "en",
+  "background_scripts": [
+    "background.bundle.js"
+  ],
+  "content_scripts": [
+    "content.bundle.js"
+  ],
+  "browser_button": {
+    "caption": "Grubly",
+    "icon": "icons/button.png",
+    "tooltipText": "Grubly"
+  },
+  "permissions": {
+    "content_scripts": [
+      "*://feedly.com/*/*"
+    ],
+    "context_menu": false,
+    "notifications": false,
+    "web_navigation": false,
+    "xhr": [
+      "*://cloud.feedly.com/*/*"
+    ]
+  }
+}
